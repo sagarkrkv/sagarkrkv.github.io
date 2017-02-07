@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Fernando Moreira</title>
+  <subtitle>Front-end developer</subtitle>
+  <id>http://nandomoreira.me/</id>
+  <link href="http://nandomoreira.me/"/>
+  <link href="http://nandomoreira.me/feed.xml" rel="self"/>
+  <updated>2017-02-03T22:52:00+00:00</updated>
+  <author>
+    <name>Fernando Moreira</name>
+  </author>
+  <entry>
+    <title>Cloud Agnostic Load Balancing and High Availability of Microservices</title>
+    <link rel="alternate" href="http://nandomoreira.me/comece-com-gulpjs/"/>
+    <id>http://nandomoreira.me/comece-com-gulpjs/</id>
+    <published>2017-02-03T22:52:00+00:00</published>
+    <updated>2017-02-07T06:29:17+00:00</updated>
+    <author>
+      <name>Fernando Moreira</name>
+    </author>
+    <content type="html">&lt;p&gt;Microservices architecture is geared towards horizontal scalability, where new instances are spawned/removed to
+dynamically respond to changes in demand and/or failures to ensure High Availabilty of the system as a whole.&lt;/p&gt;
+
+&lt;p&gt;In this constantly changing environment we need some fault tolerant mechanism to ensure a client is aware of
+the network location viz., IP address and port number of these instances.&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Service-discovery-1" width="1024" height="1044" src="/assets/images/posts/2017/02/service-discovery-1.png?1486449187" /&gt;
+  &lt;a href="https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/"&gt;Image Source&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Source Registry&lt;/h2&gt;
+
+&lt;p&gt;Here a service registry plays a key role, as it constantly keeps track of the available services.The network location of a service instance is registered with the service registry when it starts up. It is removed from the service registry when the instance terminates. The service instance’s registration is typically refreshed periodically using a heartbeat mechanism.&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Service-discovery-2" width="1024" height="631" src="/assets/images/posts/2017/02/service-discovery-2.png?1486449187" /&gt;
+  &lt;a href="https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/"&gt;Image Source&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Consul as Service Registry&lt;/h2&gt;
+
+&lt;p&gt;The popular service registries are &lt;a href="https://www.consul.io"&gt;Consul&lt;/a&gt;,
+&lt;a href="https://zookeeper.apache.org/"&gt;Zookeeper&lt;/a&gt;, and&lt;a href="https://coreos.com/etcd"&gt;ETCD&lt;/a&gt;. We choose
+Consul for two primary reasons, multi-datacenter support and inbuilt servive discovery.&lt;/p&gt;
+
+&lt;p&gt;Multi-Datacenter support allows us to spread service instances across multiple cloud providers and availabilty zones.
+Inbuilt Service Discovery allows clients to directly discover services directly using a DNS or HTTP interface.&lt;/p&gt;
+
+&lt;p&gt;More details on Consul&amp;rsquo;s multi-datacenter architecture can be accessed &lt;a href="https://www.consul.io/docs/internals/architecture.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Instance" width="2611" height="2501" src="/assets/images/posts/2017/02/Instance.png?1486449187" /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Com apenas um comando você consegue:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fazer a compressão de centenas de imagens de um projeto antigo (eu precisei fazer isso);&lt;/li&gt;
+&lt;li&gt;Deploy para qualquer servidor sftp, ssh ou até mesmo para amazon S3;&lt;/li&gt;
+&lt;li&gt;Fazer Watch de pré-processadores e template engines;&lt;/li&gt;
+&lt;li&gt;Subir servidores locais de qualquer linguagem;&lt;/li&gt;
+&lt;li&gt;Executar os testes do seu projeto;&lt;/li&gt;
+&lt;li&gt;Executar tarefas complexas em segundos;&lt;/li&gt;
+&lt;li&gt;&amp;hellip; e ter mais tempo para tomar um café.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;E ai gostou? Ainda tem mais vantagens que não foram listadas acima, essas são as que eu mais gosto de citar quando me perguntam quais as vantagens de um Task Runner.&lt;/p&gt;
+
+&lt;p&gt;Eu sempre gosto de dizer: &amp;ldquo;Ele me faz ter mais tempo para o meu café&amp;rdquo;.&lt;/p&gt;
+
+&lt;h2&gt;Porque eu deveria usar o GulpJS?&lt;/h2&gt;
+
+&lt;p&gt;O &lt;strong&gt;Gulp&lt;/strong&gt; te dá todas as vantagens que citei no bloco anterior, além de:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ser super-rápido. Performance com certeza é uma vantagem grande do Gulpjs;&lt;/li&gt;
+&lt;li&gt;Simples e fácil de implementar. Ele é simples e direto, com certeza você vai gostar;&lt;/li&gt;
+&lt;li&gt;Quantidade enorme de plugins em seu repositório. O que você imaginar o Gulp tem um componente para isso.&lt;/li&gt;
+&lt;li&gt;&amp;hellip; e muito mais.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Essa frase acima está na homepage do gulp, ela te dá um breve &lt;em&gt;overview&lt;/em&gt; do que você irá encontrar se começar a se aventurar com ele.&lt;/p&gt;
+
+&lt;h2&gt;Instalação e configuração do Gulp&lt;/h2&gt;
+
+&lt;p&gt;Vamos criar um projeto simples, apenas para executar algumas tarefas com Gulp, o nome do projeto será &lt;a href="https://github.com/nandomoreirame/comece-com-gulp"&gt;Comece com gulp&lt;/a&gt;, e claro, ele tá lá no Github.&lt;/p&gt;
+
+&lt;p&gt;😎&lt;/p&gt;
+
+&lt;p&gt;Instale o Gulp global com o comando: &lt;code&gt;npm install -g gulp-cli&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PS. em alguns sistemas operacionais, se você não estiver usando &lt;a href="https://github.com/creationix/nvm"&gt;NVM&lt;/a&gt; para gerenciar suas versões do nodejs, você precisará executar o comando com SUDO.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Inicie o projeto npm com o comando: &lt;code&gt;npm init&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Comece-com-gulp-npm-init" width="1618" height="1658" src="/assets/images/posts/2017/01/comece-com-gulp-npm-init.png?1486449187" /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Esse comando irá criar um arquivo chamado &lt;strong&gt;package.json&lt;/strong&gt;, com ele você gerencia todos os pacotes e dependências do seu projeto.&lt;/p&gt;
+
+&lt;p&gt;O meu &lt;strong&gt;package.json&lt;/strong&gt; ficou mais ou menos assim:&lt;/p&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"comece-com-gulp"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"version"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"1.0.0"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"description"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"&amp;gt; Repositório do artigo: http://nandomoreira.me/comece-com-gulpjs/"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"main"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"gulpfile.js"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"dependencies"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;"gulp"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"^3.9.1"&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"devDependencies"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{},&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"scripts"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;"test"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"echo &lt;/span&gt;&lt;span class="se"&gt;\"&lt;/span&gt;&lt;span class="s2"&gt;Error: no test specified&lt;/span&gt;&lt;span class="se"&gt;\"&lt;/span&gt;&lt;span class="s2"&gt; &amp;amp;&amp;amp; exit 1"&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"repository"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;"type"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"git"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;"url"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"git+https://github.com/nandomoreirame/comece-com-gulp.git"&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"author"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;""&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"license"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"ISC"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"bugs"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;"url"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"https://github.com/nandomoreirame/comece-com-gulp/issues"&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"homepage"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"https://github.com/nandomoreirame/comece-com-gulp#readme"&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Instale o Gulp local com o comando: &lt;code&gt;npm install --save-dev gulp&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Você vai notar que na linha onde tinha &lt;code&gt;&amp;quot;devDependencies&amp;quot;: {},&lt;/code&gt; foi adicionado o gulp.&lt;/p&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="s2"&gt;"devDependencies"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"gulp"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"^3.9.1"&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O gulp agora faz parte das dependências de dev do seu projeto, assim como os módulos que iremos instalar para ajudar na execução das tarefas.&lt;/p&gt;
+
+&lt;h2&gt;Hello World com Gulp&lt;/h2&gt;
+
+&lt;p&gt;Dentro do projeto temos o arquivo &lt;strong&gt;package.json&lt;/strong&gt; e o diretório &lt;strong&gt;node_modules/&lt;/strong&gt; onde está instalado o Gulp local.&lt;/p&gt;
+
+&lt;p&gt;Vamos criar o arquivo chamado &lt;strong&gt;gulpfile.js&lt;/strong&gt;, que é obrigatório para criarmos as tarefas do Gulp.&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;touch gulpfile.js
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Nesse arquivo vamos requirir o Gulp usando &lt;a href="https://pt.wikipedia.org/wiki/CommonJS"&gt;ComomJS&lt;/a&gt;: &lt;code&gt;require(&amp;#39;gulp&amp;#39;);&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;span class="s1"&gt;'use strict'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;gulp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'gulp'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Na primeira linha temos o &lt;code&gt;&amp;#39;use strict&amp;#39;&lt;/code&gt;, se você não sabe para que serve o &lt;strong&gt;&amp;lsquo;use strict&amp;rsquo;&lt;/strong&gt; eu indico assistir a palestra de &lt;a href="https://youtu.be/7Ur9zN2vMcs?t=1m7s"&gt;Javascript Secrets&lt;/a&gt; do Fernando Daciuk, muito legal. Já na segunda linha criamos uma variável chamada &lt;strong&gt;gulp&lt;/strong&gt;, a qual iremos usar muito por todo nosso código.&lt;/p&gt;
+
+&lt;p&gt;Vamos ao Hello World.&lt;/p&gt;
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;span class="s1"&gt;'use strict'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;gulp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'gulp'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="nx"&gt;gulp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;task&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'hello'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello World.'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Basta rodar o comando: &lt;code&gt;gulp hello&lt;/code&gt; no seu terminal que a mágica vai acontecer.&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Comece-com-gulp-hello" width="1276" height="240" src="/assets/images/posts/2017/01/comece-com-gulp-hello.png?1486449187" /&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Comandos&lt;/h2&gt;
+
+&lt;p&gt;Você pode obter a lista de comandos do Gulp apenas digitando o commando: &lt;code&gt;gulp --help&lt;/code&gt; no terminal.&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Comece-com-gulp-help" width="1224" height="1110" src="/assets/images/posts/2017/01/comece-com-gulp-help.png?1486449187" /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Um comando bem interessante é o que lista todas as tasks do projeto: &lt;code&gt;gulp --tasks&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Comece-com-gulp-tasks" width="1212" height="172" src="/assets/images/posts/2017/01/comece-com-gulp-tasks.png?1486449187" /&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+
+&lt;h2&gt;Concluindo..&lt;/h2&gt;
+
+&lt;p&gt;Esse foi apenas o primeiro passo para você começar com Gulpjs, vai por mim, tem muitas coisas legais que da pra fazer com uma task do gulp.&lt;/p&gt;
+
+&lt;p&gt;Espero que tenha gostado do artigo, é simples mas útil.&lt;/p&gt;
+
+&lt;p&gt;Logo mais vou fazer outro artigo um pouco mais avançado para você ir mais além com ele.&lt;/p&gt;
+
+&lt;p&gt;Até breve.&lt;/p&gt;
+
+&lt;p&gt;/end&lt;/p&gt;
+
+&lt;hr&gt;
+</content>
+  </entry>
+</feed>
