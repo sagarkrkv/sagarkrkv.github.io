@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Vidya Sagar Kalvakunta</title>
+  <subtitle>Software Engineer</subtitle>
+  <id>https://sagarkrkv.github.io/</id>
+  <link href="https://sagarkrkv.github.io/"/>
+  <link href="https://sagarkrkv.github.io/feed.xml" rel="self"/>
+  <updated>2017-05-05T23:47:00+00:00</updated>
+  <author>
+    <name>Vidya Sagar Kalvakunta</name>
+  </author>
+  <entry>
+    <title>Final Assignment</title>
+    <link rel="alternate" href="https://sagarkrkv.github.io/Final-Assignment/"/>
+    <id>https://sagarkrkv.github.io/Final-Assignment/</id>
+    <published>2017-05-05T23:47:00+00:00</published>
+    <updated>2017-05-07T07:36:34+00:00</updated>
+    <author>
+      <name>Vidya Sagar Kalvakunta</name>
+    </author>
+    <content type="html">&lt;p&gt;During this semester I have worked on 3 topics&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://sagarkrkv.github.io/Assignment-1-2/"&gt;Cloud Agnostic Load Balancing&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sagarkrkv.github.io/Assignment-3/"&gt;Evalution of Ansible as an infrastructure provisioning tool&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sagarkrkv.github.io/CI-CD/"&gt;Cloud Agnostic Continuous Integration / Continuous delivery&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My contributions on each of these problems can be found in my blog entries at&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://sagarkrkv.github.io/tags/airavata/"&gt;https://sagarkrkv.github.io/tags/airavata/&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The resources that were useful&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://highscalability.com/all-time-favorites/"&gt;http://highscalability.com/all-time-favorites/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.snap-ci.com/blog/2015/06/22/continuous-deployment-strategies/"&gt;https://blog.snap-ci.com/blog/2015/06/22/continuous-deployment-strategies/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://engineering.quora.com/Continuous-Deployment-at-Quora"&gt;https://engineering.quora.com/Continuous-Deployment-at-Quora&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Assignment 4-5</title>
+    <link rel="alternate" href="https://sagarkrkv.github.io/CI-CD/"/>
+    <id>https://sagarkrkv.github.io/CI-CD/</id>
+    <published>2017-05-01T21:22:00+00:00</published>
+    <updated>2017-05-07T07:36:34+00:00</updated>
+    <author>
+      <name>Vidya Sagar Kalvakunta</name>
+    </author>
+    <content type="html">&lt;h2&gt;Problem Statement&lt;/h2&gt;
+
+&lt;p&gt;To determine the best solution for Continuous Integration/Continuous Deployment in a multi-datacenter environment.&lt;/p&gt;
+
+&lt;h3&gt;Possible Solutions&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Continuous integration:&lt;/strong&gt; Its the process of automatically building the appropriate
+environment and testing the software on a every commit. Two most popular CI tools are.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Travis CI&lt;/li&gt;
+&lt;li&gt;Jenkins&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class="image"&gt;
+    &lt;img alt="Ci" width="1011" height="654" src="/assets/images/posts/2017/05/CI.jpg?1494142795" /&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Continuous deployment:&lt;/strong&gt; The process of deployment of updates on the production environment while
+ensuring high availability and rollover capability in case of failures.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spinnaker&lt;/li&gt;
+&lt;li&gt;Jenkins Master/Slave&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class="image"&gt;
+    &lt;img alt="Cd" width="1551" height="113" src="/assets/images/posts/2017/05/CD.png?1494142795" /&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;This blog gives a good overview of how CI/CD works
+  in an real time environment &lt;a href="https://engineering.quora.com/Continuous-Deployment-at-Quora"&gt;https://engineering.quora.com/Continuous-Deployment-at-Quora&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The High Scalability blog has been invaluable in learning more about the real life architecture
+  at tech giants and learn more about the intricacies involved. &lt;a href="http://highscalability.com/all-time-favorites/"&gt;http://highscalability.com/all-time-favorites/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Solution Evaluations&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Travis CI&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Travis CI is continuous integration as a service that is
+free for all open projects on Github. Presently, Airavata’s GitHub repo
+has Travis CI builds enabled, that is, whenever a pull request is
+submitted by a developer, Travis CI builds and tests the whole
+Airavata project using Maven.&lt;/p&gt;
+
+&lt;p&gt;Pros:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;No need to create and maintain a our own CI server.&lt;/li&gt;
+&lt;li&gt;Very reliable, as it is maintained and supported commercially.&lt;/li&gt;
+&lt;li&gt;Easy configuration for build and test.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;No fine grained control over the CI/CD pipelines.&lt;/li&gt;
+&lt;li&gt;Debugging is slightly difficult.&lt;/li&gt;
+&lt;li&gt;Lacks support for Continuous Deployment to OpenStack&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Jenkins&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Jenkins is an open source automation server which can
+be used for Continuous Integration. It has numerous plugins which can
+be used to extend its functionality into a full fledged CI/CD server.&lt;/p&gt;
+
+&lt;p&gt;Pros:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Very popular, with lots of community support.&lt;/li&gt;
+&lt;li&gt;Large collection of plugins make it easy to achieve fine
+grained control over the process.&lt;/li&gt;
+&lt;li&gt;Able to create complex pipelines that supports multiple third
+party Continuous Deployment tools such as Spinnaker .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Have to create and maintain our own Jenkins master server.&lt;/li&gt;
+&lt;li&gt;Initial setup and configuration may be time consuming and
+difficult.&lt;/li&gt;
+&lt;li&gt;Lacks the reliability of a maintained service such as Travis .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Spinnaker&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Spinnaker is an open source multi-cloud Continuous
+Delivery platform started by Netflix. It provides a complete CI/CD
+pipeline when integrated with Jenkins. Its built on the concept of
+immutable infrastructure, i.e every instance in the cluster can only be
+destroyed but not altered after it is created.&lt;/p&gt;
+
+&lt;p&gt;Pros:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It has different modern deployment strategies viz blue-green,
+canary, etc built-in.&lt;/li&gt;
+&lt;li&gt;Its concept of immutable infrastructure makes the
+deployment process very reliable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Difficult setup and lack of support.&lt;/li&gt;
+&lt;li&gt;It freely creates and destroys infrastructure, which might end
+using a lot of resources.&lt;/li&gt;
+&lt;li&gt;Learning curve for new developers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class="image"&gt;
+    &lt;img alt="Spinnaker" width="616" height="600" src="/assets/images/posts/2017/05/spinnaker.png?1494142795" /&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Though Travis CI provides integrations to cloud providers like AWS,
+but it lacks support for in-house infrastructure and also OpenStack,
+hence makes no sense to invest time in Travis CI. Therefore, we
+recommend Jenkins for accomplishing the CI &amp;amp; CD implementations,
+especially because of the fine grained controls it provides through
+Jenkins pipelines and the support for continuous deployments through
+Jenkins slaves.&lt;/p&gt;
+
+&lt;p&gt;Though Spinnaker seems to be full fledged solution, it lack proper
+documentation and its installation process is difficult. Its concept of
+constantly creating new instances and destroying old instances may not
+be suitable for Airavata as we may need to reuse existing reserved
+instances.Using Jenkins for Continuous Delivery using a master/slave
+configuration may seem to be the best option.&lt;/p&gt;
+
+&lt;h3&gt;My Discussions on the Apache Airavata Developer List&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://lists.apache.org/thread.html/6fadedbae49ee1798ab0995b61f509a1655d9f75412a092776b3aea0@%3Cdev.airavata.apache.org%3E"&gt;Link&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Assignment 3</title>
+    <link rel="alternate" href="https://sagarkrkv.github.io/Assignment-3/"/>
+    <id>https://sagarkrkv.github.io/Assignment-3/</id>
+    <published>2017-03-02T21:52:00+00:00</published>
+    <updated>2017-05-07T07:36:34+00:00</updated>
+    <author>
+      <name>Vidya Sagar Kalvakunta</name>
+    </author>
+    <content type="html">&lt;h2&gt;Problem Statement&lt;/h2&gt;
+
+&lt;p&gt;To determine the best solution to  provision infrastructure in a multi-datacenter environment.&lt;/p&gt;
+
+&lt;h3&gt;Possible Solutions&lt;/h3&gt;
+
+&lt;p&gt;Use Terraform or Ansible for infrastructure provisioning.&lt;/p&gt;
+
+&lt;h3&gt;Solution Evaluations&lt;/h3&gt;
+
+&lt;p&gt;Ansible is a very popular configuration management tool which can also be used to create and manage infrastructure.
+While Terraform is a orchestration tool, whose specific purpose is to create and manage infrastructure.&lt;/p&gt;
+
+&lt;p&gt;The major difference between them is that Ansible encourages a procedural style where you have to write code that
+ specifies, step-by-step, how to achieve some desired end state. While Terraform uses a declarative style where
+you write code that specifies just your desired end state and Terraform figures out how to achieve that.&lt;/p&gt;
+
+&lt;p&gt;I referenced several open-source Ansible playbooks and modified the &lt;a href="https://github.com/atplanet/ansible-auto-scaling-tutorial"&gt;ansible-auto-scaling-tutorial&lt;/a&gt;
+playbook to create an Airavata API-Server autoscaling infrastructure on AWS. My observation upon using Ansible is that we have to manually write code that evaluates
+every variable/value of the existing deployment against the variables present in the configuration file and decide
+whether the configuration has changed and make changes accordingly. Ansible places a lot of responsibilty on the
+developer to make sure there aren&amp;rsquo;t any major bugs in the playbook that may result in an unstable infrastructure.&lt;/p&gt;
+
+&lt;p&gt;Comparatively Terraform standardizes this process and crowd sources this responsibilty of finding and
+fixes any potential bugs to the open-source community and devolpers using Terraform as a whole.&lt;/p&gt;
+
+&lt;p&gt;Terraform was evaluated in detail by Anuj visit &lt;a href="https://anujbhan.github.io/blogs/DevOps-tool-Comparison"&gt;https://anujbhan.github.io/blogs/DevOps-tool-Comparison&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Terraform seems to be the best choice for creating immutable infrastructure.&lt;/p&gt;
+
+&lt;h3&gt;Wiki for Code Instructions&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-devops/blob/master/infrastructure/Ansible-Infrastructure/README.md"&gt;https://github.com/airavata-courses/spring17-devops/blob/master/infrastructure/Ansible-Infrastructure/README.md&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;My Git Commits for this Project:&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-devops/tree/master/infrastructure/Ansible-Infrastructure"&gt;https://github.com/airavata-courses/spring17-devops/tree/master/infrastructure/Ansible-Infrastructure&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;My Discussions on the Apache Airavata Developer List&lt;/h3&gt;
+
+&lt;p&gt;No discussions.&lt;/p&gt;
+
+&lt;h3&gt;My Jira Entries&lt;/h3&gt;
+
+&lt;p&gt;No Jira entries were needed.&lt;/p&gt;
+
+&lt;h3&gt;My Apache Airavata Pull Requests&lt;/h3&gt;
+
+&lt;p&gt;No Airavata Pull Requests.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Assignment 1 - 2</title>
+    <link rel="alternate" href="https://sagarkrkv.github.io/Assignment-1-2/"/>
+    <id>https://sagarkrkv.github.io/Assignment-1-2/</id>
+    <published>2017-02-06T03:52:00+00:00</published>
+    <updated>2017-05-07T07:36:34+00:00</updated>
+    <author>
+      <name>Vidya Sagar Kalvakunta</name>
+    </author>
+    <content type="html">&lt;h2&gt;Problem Statement&lt;/h2&gt;
+
+&lt;p&gt;Load Balance Apache Airavata API-Server on AWS using spot instances.&lt;/p&gt;
+
+&lt;h3&gt;Possible Solutions&lt;/h3&gt;
+
+&lt;p&gt;Use Consul or Zookeeper or ETCD as service registry and HAProxy or Fabio for load balancing.&lt;/p&gt;
+
+&lt;h3&gt;Solution Evaluations&lt;/h3&gt;
+
+&lt;p&gt;Detailed info &lt;a href="http://sagarkrkv.github.io/CloudAgnostic-LoadBalancing-HighAvailability/"&gt;http://sagarkrkv.github.io/CloudAgnostic-LoadBalancing-HighAvailability/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Consul with HAProxy and Consul Template seems to be the best approach for our scenario.&lt;/p&gt;
+
+&lt;h3&gt;Wiki for Code Instructions&lt;/h3&gt;
+
+&lt;p&gt;Please see &lt;a href="http://sagarkrkv.github.io/CloudAgnostic-LoadBalancing-HighAvailability/"&gt;http://sagarkrkv.github.io/CloudAgnostic-LoadBalancing-HighAvailability/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;My Git Commits for this Project:&lt;/h3&gt;
+
+&lt;p&gt;Commits related to Load Balancing:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/commit/de1d9ee1588df9b044cd6315809acdf4989c7ee4"&gt;Commit #1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/commit/4f344da46331824335caed681e109bc39c630937"&gt;Commit #2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/commit/4fe85e30729336f2e38e3b16e1601582cb81b729"&gt;Commit #3&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/commit/72116a5fbd35573ac79158b54c82b1204bc515c9"&gt;Commit #4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/commit/de1d9ee1588df9b044cd6315809acdf4989c7ee4"&gt;Commit #5&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Commits related to load balancing:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/commit/b54731a8b3fbdf261dc878b5429defeca06a0548"&gt;Commit #6&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/commit/2d7e2a75e1b1e2ebf2964a39cb95d027caec2d25"&gt;Commit #7&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/commit/26e1bb2bcd2c6af0d61fbf1092663b95f02d5f07"&gt;Commit #8&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/commit/ba1f7cd562783d9d3fe6b9b89bb161a6c73a7f1f"&gt;Commit #9&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/commit/c3e41e35b6d506e1e2c2e54fc6b028bf7638f2a3"&gt;Commit #10&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;My Discussions on the Github issues&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/issues/1"&gt;Issue #1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/issues/2"&gt;Issue #2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/issues/3"&gt;Issue #3&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;My Discussions on the Apache Airavata Developer List&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://mail-archives.apache.org/mod_mbox/airavata-dev/201701.mbox/%3CCA%2B%2B%3DuKosUEJP5fbyBhRLbcaPku1CHOjUnuoC%2BHrxAnzJ_Xmo_Q%40mail.gmail.com%3E"&gt;Load Balancing #1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://mail-archives.apache.org/mod_mbox/airavata-dev/201701.mbox/%3CCA%2B%2B%3DuKo%3D4j%3Dvr1HiCWUcpUHWvd8T5V94Mbe-UUQpxVU4w4jwgg%40mail.gmail.com%3E"&gt;Load Balancing #2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://mail-archives.apache.org/mod_mbox/airavata-dev/201702.mbox/%3CCA%2B%2B%3DuKo9ZVSFJcJONOcG0KXZ-Y52zw%3D6qeW7WS6iV_9e0WODiA%40mail.gmail.com%3E"&gt;Workload Distribution #1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://mail-archives.apache.org/mod_mbox/airavata-dev/201702.mbox/%3CCA%2B%2B%3DuKog2rvPkoV-9RKk7MSpMVFusT25h8aRNhQGRK-R24v4BQ%40mail.gmail.com%3E"&gt;Workload Distribution #2&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;My Jira Entries&lt;/h3&gt;
+
+&lt;p&gt;No Jira entries were needed.&lt;/p&gt;
+
+&lt;h3&gt;My Apache Airavata Pull Requests&lt;/h3&gt;
+
+&lt;p&gt;No Airavata Pull Requests.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Cloud Agnostic Load Balancing and High Availability of Microservices</title>
+    <link rel="alternate" href="https://sagarkrkv.github.io/CloudAgnostic-LoadBalancing-HighAvailability/"/>
+    <id>https://sagarkrkv.github.io/CloudAgnostic-LoadBalancing-HighAvailability/</id>
+    <published>2017-02-03T22:52:00+00:00</published>
+    <updated>2017-05-07T07:36:34+00:00</updated>
+    <author>
+      <name>Vidya Sagar Kalvakunta</name>
+    </author>
+    <content type="html">&lt;p&gt;Microservices architecture is geared towards horizontal scalability, where new instances are spawned/removed to
+dynamically respond to changes in demand and/or failures to ensure High Availabilty of the system as a whole.&lt;/p&gt;
+
+&lt;p&gt;In this constantly changing environment we need some fault tolerant mechanism to ensure a client is aware of
+the network location viz., IP address and port number of these instances.&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Service-discovery-1" width="1024" height="1044" src="/assets/images/posts/2017/02/service-discovery-1.png?1494142795" /&gt;
+  &lt;a href="https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/"&gt;Image Source&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Service Registry&lt;/h2&gt;
+
+&lt;p&gt;A service registry plays a key role, as it continuosly keeps track of the available services.The network location of a service instance is registered with the service registry when it starts up. It is removed from the service registry when the instance terminates. The service instance’s registration is typically refreshed periodically using a heartbeat mechanism.&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Service-discovery-2" width="1024" height="631" src="/assets/images/posts/2017/02/service-discovery-2.png?1494142795" /&gt;
+  &lt;a href="https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/"&gt;Image Source&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Consul as Service Registry&lt;/h2&gt;
+
+&lt;p&gt;The popular service registries are &lt;a href="https://www.consul.io"&gt;Consul&lt;/a&gt;,
+&lt;a href="https://zookeeper.apache.org/"&gt;Zookeeper&lt;/a&gt;, and&lt;a href="https://coreos.com/etcd"&gt;ETCD&lt;/a&gt;. We choose
+Consul for two primary reasons, multi-datacenter support and inbuilt servive discovery.&lt;/p&gt;
+
+&lt;p&gt;Multi-Datacenter support allows us to spread service instances across multiple cloud providers and availabilty zones.
+Inbuilt Service Discovery allows clients to directly discover services directly using a DNS or HTTP interface.&lt;/p&gt;
+
+&lt;p&gt;More details on Consul&amp;rsquo;s multi-datacenter architecture can be accessed &lt;a href="https://www.consul.io/docs/internals/architecture.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Instance" width="2611" height="2501" src="/assets/images/posts/2017/02/Instance.png?1494142795" /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Consul Setup&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;p&gt;Setup instructions for dockerized Consul v0.7.5&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;  # Allow alias to be used in non-interactive shell
+  shopt -s expand_aliases
+
+  # Creating alias for determining the wan ip address and lan ip address of the instance
+  alias wanip="dig +short myip.opendns.com @resolver1.opendns.com"
+  alias lanip="ifconfig eth0 | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
+
+  # adding the aliases to .bashrc to make them persistant
+  echo "alias wanip=\"dig +short myip.opendns.com @resolver1.opendns.com\"" &amp;gt;&amp;gt; .bashrc
+  echo "alias lanip=\"ifconfig eth0 | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'\"" &amp;gt;&amp;gt; .bashrc
+
+  # run consul in server mode on instance
+  sudo docker run --restart unless-stopped --net=host  -d  -e 'CONSUL_LOCAL_CONFIG={"translate_wan_addrs": true}' consul \
+          agent -server -bootstrap-expect=1  -advertise $(lanip) -ui -advertise-wan $(wanip) -client=0.0.0.0
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;--restart unless-stopped&lt;/code&gt; allows docker to autorestart Consul in the event of crash&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CONSUL_LOCAL_CONFIG={&amp;quot;translate_wan_addrs&amp;quot;: true}&lt;/code&gt; enables consul&amp;rsquo;s auto translation i.e if the an application being
+queried is in the same DataCenter, the LAN IP address is retrieved, and if its from a different datacenter the WAN IP
+address is retrieved.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;agent&lt;/code&gt; Consul agent is run&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-server&lt;/code&gt; The agent is run in server mode&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-bootstrap-expect&lt;/code&gt; The number of consul servers that will be present in the cluster, this is needed for
+maintaining the quorum.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-advertise&lt;/code&gt; the IP address that will be broadcasted to the Consul cluster. (A single IP address can also be broadcasted either WAN or LAN)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-advertise-wan&lt;/code&gt; the WAN IP address that will be broadcasted to the Consul cluster.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-ui&lt;/code&gt; enables web UI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Fabio&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/eBay/fabio"&gt;Fabio&lt;/a&gt; is a fast, modern, zero-conf load balancing HTTP(S) router written in Go for
+deploying applications managed by Consul. Fabio watches services in consul and reloads its configuration on every
+change without interrupting existing connections. So in that sense it provides true zero-downtime compared to
+HAProxy+Consul-Template.&lt;/p&gt;
+
+&lt;p&gt;To enable load balancing with Fabio we have to add a tag beginning with &lt;code&gt;urlprefix-&lt;/code&gt; and enable
+healthcheck while registering the microservices with Consul. Fabio only adds services with a passing healthcheck and a valid tag.&lt;/p&gt;
+
+&lt;p&gt;Register one urlprefix- tag per host/path prefix it serves, e.g.:&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;  urlprefix-/microserviceA  --&amp;gt; localhost:9999/microserviceA
+
+  urlprefix-microserviceB/data --&amp;gt; localhost:9999/microserviceB/data
+
+  urlprefix-mysite.com/  --&amp;gt; --&amp;gt; localhost:9999/mysite.com/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By default Fabio listens on port 9999, so any traffic received at that port with their path beginning with a valid path
+will be loadbalanced among the matching services.&lt;/p&gt;
+
+&lt;p&gt;Fabio web user interface can be accessed at port 9998.&lt;/p&gt;
+
+&lt;!-- &lt;div class="image"&gt;
+  &lt;img alt="Consul + fabio" src="http://image.slidesharecdn.com/201601dockerfinal-160113214750/95/amazon-ecs-march-2016-12-638.jpg?cb=1456899375" /&gt;
+  &lt;a href="http://www.slideshare.net/JulienSIMON5/running-docker-clusters-on-aws-june-2016"&gt;Image Source&lt;/a&gt;
+&lt;/div&gt; &amp;ndash;&gt;
+
+&lt;p&gt;&lt;strong&gt;Fabio Setup&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;  sudo docker run --restart unless-stopped --net=host  -d magiconair/fabio
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;HAProxy + ConsulTemplate&lt;/h2&gt;
+
+&lt;p&gt;Consul Template is a service that constantly queries a Consul or Vault cluster and updates any number of
+specified templates on the file system. As an added bonus, it can optionally run arbitrary commands when the
+update process completes.&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Consul + fabio" src="https://image.slidesharecdn.com/untitled-150309081332-conversion-gate01/95/consul-serviceoriented-at-scale-44-638.jpg" /&gt;
+  &lt;a href="http://www.slideshare.net/InfoQ/consul-serviceoriented-at-scale"&gt;Image Source&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Consul Template Setup&lt;/strong&gt; :&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  # install HAProxy
+  sudo yum install -y haproxy # yum works for fedora/centos/rhel based systems, use apt-get for debian based systems
+
+  # install consul-template
+  cd /tmp
+  wget https://releases.hashicorp.com/consul-template/0.18.1/consul-template_0.18.1_linux_amd64.tgz
+  tar -xvzf consul-template_0.18.1_linux_amd64.tgz
+  sudo chmod a+x consul-template
+  sudo mv consul-template /usr/bin/consul-template
+  rm -rf /tmp/consul-template_0.18.1_linux_amd64.tgz
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/blob/loadBalancer/haproxy-config/haproxy.hcl"&gt;Consul Template Config File&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/airavata-courses/spring17-API-Server/blob/loadBalancer/haproxy-config/haproxy.ctmpl"&gt;HAProxy Template File&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To start the consul template &lt;code&gt;nohup sudo consul-template -config=haproxy-config/haproxy.hcl &amp;amp;&amp;gt; ctmpl.log &amp;amp;&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class="image"&gt;
+  &lt;img alt="Blog-consul-template-haproxy" width="552" height="212" src="/assets/images/posts/2017/02/blog-consul-template-haproxy.png?1494142795" /&gt;
+  &lt;a href="https://developer.epages.com/blog/2015/09/28/service-discovery-with-consul-registrator-and-haproxy.html"&gt;Image Source&lt;/a&gt;
+&lt;/div&gt;
+</content>
+  </entry>
+</feed>
